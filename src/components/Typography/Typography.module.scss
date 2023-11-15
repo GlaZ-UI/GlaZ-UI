@@ -1,0 +1,72 @@
+.Text,
+.Paragraph,
+.Title {
+	--index: calc(1vh + 1vw);
+
+	color: #fff;
+	font-family: monospace;
+	font-weight: 0;
+}
+
+.textStatusDefault {
+}
+
+.textStatusWarning {
+	color: #d8dc31 !important;
+}
+.textStatusError {
+	color: #c43737 !important;
+}
+.textStatusSuccess {
+	color: #4fc437 !important;
+}
+.textStatusInfo {
+	color: #37b4c4 !important;
+}
+
+.paragraphFontSizeSmall {
+	font-size: calc(var(--index) * 0.7);
+}
+
+.paragraphFontSizeMedium {
+	font-size: calc(var(--index) * 1);
+}
+
+.paragraphFontSizeLarge {
+	font-size: calc(var(--index) * 1.5);
+}
+
+.paragraphTypeDefault {
+}
+
+.paragraphTypeCode {
+	padding: 25px;
+	border-radius: 8px;
+	background-color: rgb(107 107 107 / 15%);
+	box-shadow: inset 0 0 7px 0 rgba(255, 255, 255, 0.2);
+	font-family: consolas !important;
+	color: #68c3ff;
+}
+
+.textFat {
+	font-weight: bolder !important;
+}
+
+.titleLevel1 {
+	font-size: calc(var(--index) * 3);
+}
+.titleLevel2 {
+	font-size: calc(var(--index) * 2.6);
+}
+.titleLevel3 {
+	font-size: calc(var(--index) * 2.2);
+}
+.titleLevel4 {
+	font-size: calc(var(--index) * 1.8);
+}
+.titleLevel5 {
+	font-size: calc(var(--index) * 1.4);
+}
+.titleLevel6 {
+	font-size: calc(var(--index) * 1);
+}
