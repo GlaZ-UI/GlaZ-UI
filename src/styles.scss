@@ -1,0 +1,85 @@
+//GLOBAL
+
+$colorMain: rgb(107 107 107 / 15%);
+$shadowMain: inset 0 0 7px 0 rgba(255, 255, 255, 0.2);
+
+$colorSecondary: rgba(255, 255, 255, 0.2);
+$shadowSecondary: 0 0 7px 2px rgb(0 0 0);
+
+$stateDisabled: blur(1px) brightness(0.85);
+
+$textFontColorMain: #fff;
+$textFontColorSecondary: #bdbdbd;
+
+$textStatusWarning: #d8dc31 !important;
+$textStatusError: #c43737 !important;
+$textStatusSuccess: #4fc437 !important;
+$textStatusInfo: #37b4c4 !important;
+
+$fontFamilyMain: monospace;
+$fontFamilyCode: consolas;
+
+//GLOBAL
+
+//BUTTONS
+
+$buttonFilledColor: rgba(255, 255, 255, 0.2);
+$buttonFilledShadow: 0 0 7px 2px rgb(0 0 0);
+$buttonFilledColorActive: rgba(255, 255, 255, 0.35);
+
+$buttonPrimaryColor: rgb(107 107 107 / 15%);
+$buttonPrimaryShadow: inset 0 0 7px 0 rgba(255, 255, 255, 0.2);
+$buttonPrimaryColorActive: rgba(255, 255, 255, 0.15);
+
+$buttonOutlinedColor: rgb(107 107 107 / 0%);
+$buttonOutlinedShadow: inset 0 0 7px 0 rgba(255, 255, 255, 0.2);
+$buttonOutlinedColorActive: rgb(107 107 107 / 15%);
+
+$buttonTextColor: rgba(255, 255, 255, 0.15);
+
+$buttonLinkTextColor: #439afb;
+
+$buttonFontSizeSmall: 15px;
+$buttonFontSizeMedium: 30px;
+$buttonFontSizeLarge: 45px;
+
+$buttonHeightSmall: 50px;
+$buttonHeightMedium: 70px;
+$buttonHeightLarge: 100px;
+
+$flareGradient: linear-gradient(
+	45deg,
+	rgba(255, 255, 255, 0) 38%,
+	rgba(255, 255, 255, 0.2) 49%,
+	rgba(255, 255, 255, 0) 60%
+);
+
+//BUTTONS
+
+//TYPOGRAPHY
+
+$textFontColorCode: #68c3ff;
+
+$textWrapperCodeColor: rgb(107 107 107 / 15%);
+$textWrapperCodeShadow: inset 0 0 7px 0 rgba(255, 255, 255, 0.2);
+
+$textSizeSmall: 15px;
+$textSizeMedium: 30px;
+$textSizeLarge: 45px;
+
+$titleSizeH1: 60px;
+$titleSizeH2: 52px;
+$titleSizeH3: 44px;
+$titleSizeH4: 36px;
+$titleSizeH5: 28px;
+$titleSizeH6: 20px;
+
+//TYPOGRAPHY
+
+//TABS
+
+$tabsBackgroundColor: rgb(107 107 107 / 15%);
+$tabsShadow: inset 0 0 7px 0 rgba(255, 255, 255, 0.2);
+
+$tabButtonColorActive: rgba(255, 255, 255, 0.1);
+//TABS

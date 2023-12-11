@@ -1,7 +1,7 @@
 import { FC, PropsWithChildren } from 'react';
-import styles from './Button.module.scss';
-import { classNames } from '../../utils/classNames';
 import { VscLoading } from 'react-icons/vsc';
+import { classNames } from '../../utils/classNames';
+import styles from './Button.module.scss';
 import {
 	ButtonShapes,
 	ButtonSizes,
@@ -105,6 +105,7 @@ const Button: FC<PropsWithChildren<IButtonProps>> = ({
 		permanent: styles.buttonWavesPermanent,
 		none: styles.buttonWavesNone,
 	};
+
 	if (type === 'link') {
 		return (
 			<a
@@ -117,12 +118,10 @@ const Button: FC<PropsWithChildren<IButtonProps>> = ({
 				])}
 			>
 				<div className={styles.contentBox}>
-					{loading ? (
+					{loading && (
 						<div className={styles.loadingIcon}>
 							<VscLoading />
 						</div>
-					) : (
-						<></>
 					)}
 					{children}
 				</div>

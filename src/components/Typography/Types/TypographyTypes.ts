@@ -1,4 +1,5 @@
 export type ParagraphTypes = 'default' | 'code';
+
 export type ParagraphFontSizes = 'small' | 'medium' | 'large';
 
 export type TextStatuses = 'default' | 'success' | 'warning' | 'error' | 'info';
