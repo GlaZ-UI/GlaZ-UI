@@ -1,0 +1,85 @@
+@import '../../styles.scss';
+
+.inputWrapper {
+	height: 40px;
+	position: relative;
+	margin: 7px;
+}
+
+.inputLabel {
+	color: $textFontColorMain;
+	font-family: $fontFamilyMain;
+	position: absolute;
+	top: -12px;
+	left: 15px;
+	font-size: 17px;
+	font-weight: 600;
+	color: $textFontColorSecondary;
+}
+
+.requiredDot {
+	user-select: none;
+	color: $textStatusError;
+	position: relative;
+	top: 4px;
+	font-size: 20px;
+	margin-inline-end: 5px;
+}
+
+.input {
+	top: 0;
+	left: 0;
+	position: absolute;
+	background-clip: padding-box;
+	padding: 15px;
+	border: none;
+	border-radius: 10px;
+	height: 40px;
+	font-size: 20px;
+	transition: 0.3s;
+	background-color: $colorMain;
+	box-shadow: $shadowMain;
+	color: $textFontColorMain;
+	font-family: $fontFamilyMain;
+}
+
+/* .input__required::placeholder, */
+.input::placeholder {
+	color: #212529;
+	opacity: 0.4;
+}
+
+.input:focus {
+	color: $textFontColorMain;
+	background-color: $colorSecondary;
+	box-shadow: $shadowSecondary;
+	border-color: #bdbdbd;
+	outline: 0;
+}
+
+.inputDisabled {
+	filter: $stateDisabled;
+	user-select: none;
+	pointer-events: none;
+}
+
+.statusDefault {
+}
+
+.statusError {
+	border-bottom: solid;
+	border-color: $textStatusError;
+	border-width: 3px;
+}
+
+.statusWarning {
+	border-bottom: solid;
+	border-color: $textStatusWarning;
+	border-width: 3px;
+}
+
+.statusSuccess {
+	border-bottom: solid;
+	border-color: $textStatusSuccess;
+	border-width: 3px;
+}

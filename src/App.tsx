@@ -1,13 +1,15 @@
 import { FC } from 'react';
-import Button from './components/Button/Button';
 import './App.scss';
+import Button from './components/Button/Button';
+import Input from './components/Input/Input';
+import Tabs from './components/Tabs/Tabs';
 import Paragraph from './components/Typography/Paragraph/Paragraph';
 import Text from './components/Typography/Text/Text';
 import Title from './components/Typography/Title/Title';
 
 interface IAppProps {}
 
-const App: FC<IAppProps> = ({}) => {
+const App: FC<IAppProps> = () => {
 	return (
 		<div className="App">
 			<div className="buttons-box">
@@ -202,6 +204,36 @@ const App: FC<IAppProps> = ({}) => {
 				<Title level={4}>Level 4</Title>
 				<Title level={5}>Level 5</Title>
 				<Title level={6}>Level 6</Title>
+				<Tabs
+					tabs={[
+						{
+							component: <Title level={1}>Tab 1</Title>,
+							title: 'default',
+							key: 'tab1',
+						},
+						{
+							component: <Title level={1}>Tab 2</Title>,
+							title: 'loading',
+							key: 'tab2',
+							loading: true,
+						},
+						{
+							component: <Title level={1}>Tab 3</Title>,
+							title: 'disabled',
+							key: 'tab3',
+							disabled: true,
+						},
+					]}
+				/>
+
+				<Input />
+				<Input label="asd" />
+				<Input status="error" />
+				<Input status="warning" />
+				<Input status="success" />
+				<Input required />
+				<Input label="asd" required />
+				<Input disabled value={'disabled input'} />
 			</div>
 		</div>
 	);
