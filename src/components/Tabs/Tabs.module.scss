@@ -1,0 +1,66 @@
+@import '../../styles.scss';
+
+.tabs {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.tabSelection {
+	margin: 0 auto;
+	width: 100%;
+	height: 70px;
+	background-color: $tabsBackgroundColor;
+	box-shadow: $tabsShadow;
+	border-radius: 7px;
+	display: flex;
+	overflow: hidden;
+}
+
+.tab,
+.tabActive {
+	padding: 0 15px;
+	user-select: none;
+	flex: 1;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $textFontColorMain;
+	font-family: $fontFamilyMain;
+	font-size: 23px;
+	transition: 0.3s;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.tabDisabled {
+	filter: $stateDisabled;
+	cursor: auto !important;
+	pointer-events: none;
+}
+
+.tabLoading {
+}
+
+.tabActive,
+.tab:hover {
+	background-color: $tabButtonColorActive;
+}
+
+.loadingIcon {
+	animation: loadingAnimation 1s ease-in-out infinite forwards;
+	line-height: 0;
+	margin-inline-end: 20px;
+}
+
+@-webkit-keyframes loadingAnimation {
+	from {
+		rotate: 0deg;
+	}
+	to {
+		rotate: 360deg;
+	}
+}
