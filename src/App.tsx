@@ -1,11 +1,12 @@
 import { FC } from 'react';
 import './App.scss';
 import Button from './components/Button/Button';
-import Input from './components/Input/Input';
+import Input from './components/Input/InputText/Input';
 import Tabs from './components/Tabs/Tabs';
 import Paragraph from './components/Typography/Paragraph/Paragraph';
 import Text from './components/Typography/Text/Text';
 import Title from './components/Typography/Title/Title';
+import CheckBox from './components/Input/CheckBox/CheckBox';
 
 interface IAppProps {}
 
@@ -234,6 +235,12 @@ const App: FC<IAppProps> = () => {
 				<Input required />
 				<Input label="asd" required />
 				<Input disabled value={'disabled input'} />
+
+				<CheckBox />
+				<CheckBox />
+				<CheckBox />
+				<CheckBox />
+				<CheckBox />
 			</div>
 		</div>
 	);

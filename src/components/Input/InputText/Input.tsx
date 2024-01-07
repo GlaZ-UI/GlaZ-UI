@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { classNames } from '../../utils/classNames';
+import { classNames } from '../../../utils/classNames';
 import styles from './Input.module.scss';
 
 type inputVariants = 'default';
